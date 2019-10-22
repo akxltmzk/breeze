@@ -48,10 +48,10 @@ app.use(function(err, req, res, next) {
 })
 
 // db port setup
-mongoose.connect('mongodb://localhost:27017/breeze')
+//mongoose.connect('mongodb://localhost:27017/breeze')
 
-// mongoose.connect('mongodb://'+process.env.DB_USER+':'+process.env.DB_PWD+'@'+process.env.DB_HOST+'/multiracing', {
-//   useNewUrlParser: true
-// })
+mongoose.connect('mongodb://'+process.env.DB_USER+':'+process.env.DB_PWD+'@'+process.env.DB_HOST+'/breeze', {
+  useNewUrlParser: true
+})
 
 module.exports = app
