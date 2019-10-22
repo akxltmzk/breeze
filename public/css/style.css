@@ -1,0 +1,163 @@
+/* common */
+nav a {
+  color: #8FBC8F !important;
+  font-weight: 500; }
+
+.navbar .navbar-brand {
+  color: black;
+  font-size: 30px; }
+
+.navbar .nav-link {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #8FBC8F !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important; }
+
+/* intro-image-section */
+.content.intropage .slider {
+  height: 90vh;
+  display: flex;
+  align-items: center; }
+
+.content.intropage .slider img {
+  height: 80%;
+  width: auto;
+  margin-right: 25px; }
+
+.content {
+  margin-top: 71px; }
+
+.content.aboutpage #page-header {
+  margin-top: 100px;
+  height: 600px;
+  color: #fff;
+  border-bottom: 1px #eee solid; }
+
+.content.aboutpage .dark-overlay {
+  height: 600px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.content.aboutpage .headerinfo {
+  height: 300px; }
+
+.content.aboutpage .headerinfo-contents {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  transform: translateY(-50%); }
+
+.content.aboutpage .about-video-indicator {
+  margin: 40px 0 40px 0;
+  border: #F05E56 solid 1px;
+  border-radius: 30px;
+  background-color: #F05E56;
+  line-height: 53px;
+  width: 142px;
+  text-align: center;
+  vertical-align: middle; }
+
+.content.aboutpage .about-video-indicator span {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: 'open sans',sans-serif;
+  font-weight: bold; }
+
+.content.aboutpage iframe {
+  width: 100%;
+  height: 305px; }
+
+.content.aboutpage #about-info {
+  margin-top: 100px; }
+
+.content.aboutpage #about-info .info-border {
+  height: 10px;
+  width: 80px;
+  border-top: black solid 2px;
+  border-bottom: black solid 2px;
+  margin-bottom: 40px; }
+
+.content.aboutpage #about-info p {
+  font-size: 0.9em; }
+
+.content.aboutpage .contact-card-wrap {
+  margin: 0 auto; }
+
+.content.aboutpage .contct-card {
+  border: none; }
+
+.content.portfolio img {
+  width: 500px;
+  height: auto; }
+
+.content.portfolio #food-image-wrap, #candle-image-wrap {
+  margin-top: 30px; }
+
+.content.portfolio .foodstyling-header-info {
+  height: 200px;
+  border-bottom: #8FBC8F solid 2px; }
+
+.content.portfolio .foodstyling-header-info h3 {
+  color: #8FBC8F;
+  padding-top: 100px;
+  font-size: 3rem; }
+
+.content.portfolio .candle-header-info {
+  height: 200px;
+  border-bottom: #bc8fbc solid 2px; }
+
+.content.portfolio .candle-header-info h3 {
+  color: #bc8fbc;
+  padding-top: 100px;
+  font-size: 3rem; }
+
+.content.managerpage .contents-wrap {
+  position: relative;
+  margin: 10px;
+  height: 235px;
+  border: #8FBC8F solid 1px;
+  border-radius: 5px; }
+
+.content.managerpage .contents-wrap h3 {
+  font-size: 1.5rem; }
+
+.content.managerpage .contents-wrap img {
+  margin-top: 10px; }
+
+.content.managerpage .contents-wrap .form-wrap {
+  position: absolute;
+  bottom: 0px;
+  width: 100%; }
+
+.content.managerpage .contents-wrap .form-wrap input {
+  position: relative;
+  width: 100%;
+  right: 15px;
+  border-radius: 3px; }
+
+@media (max-width: 600px) {
+  /* nav-bar */
+  .navbar-nav, .dropdown-menu {
+    float: none;
+    display: block !important;
+    text-align: center;
+    margin-bottom: 40px;
+    border: none; }
+
+  .dropdown-item {
+    margin-bottom: 20px; }
+
+  /* intro-image-section */
+  .content.intropage .slider {
+    margin-top: 78px;
+    height: 450px;
+    display: flex;
+    align-items: flex-start; }
+
+  .content.intropage .slider .item img {
+    display: block;
+    height: 450px;
+    width: auto;
+    margin: 0 10px; } }

@@ -1,0 +1,17 @@
+
+extends layout
+
+block content
+  .content.intropage
+
+    //- homepage background picture
+    section#intro-image-section
+      .container-fluid            
+        .slider
+          each gallerypath in gallerypaths
+            img(src=gallerypath.path)
+
+          
+  
+        
+              

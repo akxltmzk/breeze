@@ -1,0 +1,160 @@
+
+extends layout
+
+block content
+  .content.managerpage    
+
+    //- intro manager part
+
+    .container-fluid
+      .row
+        .col-lg-12.col-md-4
+          h1 INTRO
+    
+    section.py-4
+      .container-fluid
+        .row 
+          -
+            let values =[]
+            // 인트로 페이지 이미지를 몇개 넣을 수 있는지 설정
+            let arraysize = 11
+            for (let i = 0; i < arraysize; ++i) {
+              values[i] = i
+            }
+          - 
+          each value in values
+            .contents-wrap.col-lg-1  
+              h3.text-center.text-muted= value
+              - 
+                let imagepath = null
+                let imageArray = introPage[0].contents.content.galleries[0].images
+                for (let i =0; i < imageArray.length; i++){
+                  if (imageArray[i].index === value)
+                    imagepath = imageArray[i]
+                }
+              -
+              if imagepath === null 
+                p.text-center Empty ! 
+                form.form-wrap(action='/manager/uploadimage' method='post', enctype='multipart/form-data')
+                  input(type='hidden', name= 'data' ,value= { "destination" :'public/images/intropage', 
+                                                              "index" : value,
+                                                              "page" : "intropage" } )
+                  input(type='file', name='imageupload')
+                  input(type='submit')
+
+              else
+                img.img-fluid.card-img-top(src=imagepath.path)
+                form.form-wrap(action='/manager/deleteimage' method='post')
+                  input(type='hidden', name= 'data' , value= { "destination" : 'public/' + imagepath.path ,
+                                                              "index" : imagepath.index,
+                                                              "page" : "intropage"})
+                  input(type='submit' value='삭 제').btn-danger
+ 
+    //- about manager part 
+
+    .container-fluid
+      .row
+        .col-lg-12.col-md-4
+          h1 ABOUT   
+
+    section.py-4
+      h3.ml-2.text-muted headerimage
+      .container-fluid
+        .row
+          .contents-wrap.col-lg-1  
+            - 
+              let imagepath = aboutPage[0].contents.content.headerimagePath
+            -
+            if imagepath === '' 
+              p.text-center Empty ! 
+              form.form-wrap(action='/manager/uploadimage' method='post', enctype='multipart/form-data')
+                input(type='hidden', name= 'data' ,value= { "destination" :'public/images/aboutpage', 
+                                                            "imagename": 'headerimage.jpg',
+                                                            "page" : "aboutpage" } )
+                input(type='file', name='imageupload')
+                input(type='submit' value='업로드')
+            else
+              img.img-fluid.card-img-top(src= imagepath)
+              form.form-wrap(action='/manager/deleteimage' method='post')
+                input(type='hidden', name= 'data' , value= { "destination" : 'public/' + imagepath ,
+                                                            "page" : "aboutpage"})
+                input(type='submit' value='삭 제').btn-danger          
+
+
+    //- portfolio manager part
+
+    .container-fluid
+      .row
+        .col-lg-12.col-md-4
+          h1 Portfolio
+
+    section.py-4
+      h3.ml-2.text-muted foodstyling
+      .container-fluid
+        .row
+          -
+            // find foodstyling images in db
+            let foodstyling_gallery = portfolioPage[0].contents.content.galleries[0].images
+          -
+
+          each image in foodstyling_gallery
+            .contents-wrap.col-lg-1   
+              img.img-fluid.card-img-top(src= image.path)
+              form.form-wrap(action='/manager/deleteimage' method='post')
+                input(type='hidden', name= 'data' , value= {
+                                                            "section" : "foodstyling",
+                                                            "destination" :  'public/' + image.path,
+                                                            "id" : image.id,
+                                                            "page" : "portfoliopage"})
+                input(type='submit' value='삭 제').btn-danger
+
+          //- outisde your loop(can add infinite image uploader)
+
+          .contents-wrap.col-lg-1
+            form.form-wrap(action='/manager/uploadimage' method='post', enctype='multipart/form-data')
+              input(type='hidden', name= 'data' ,value= { 
+                                                          "section" : "foodstyling",
+                                                          "destination" : 'public/images/portfoliopage/foodstyling', 
+                                                          "index" :  foodstyling_gallery.length,                                                     
+                                                          "page" : "portfoliopage" } )
+              input(type='file', name='imageupload')
+              input(type='submit')
+
+    section.py-4
+      h3.ml-2.text-muted candle
+      .container-fluid
+        .row
+          -
+            // find foodstyling images in db
+            let canle_gallery = portfolioPage[0].contents.content.galleries[1].images
+          -
+
+          each image in canle_gallery
+            .contents-wrap.col-lg-1   
+              img.img-fluid.card-img-top(src= image.path)
+              form.form-wrap(action='/manager/deleteimage' method='post')
+                input(type='hidden', name= 'data' , value= {
+                                                            "section" : "candle",
+                                                            "destination" :  'public/' + image.path,
+                                                            "id" : image.id,
+                                                            "page" : "portfoliopage"})
+                input(type='submit' value='삭 제').btn-danger
+
+          //- outisde your loop(can add infinite image uploader)
+
+          .contents-wrap.col-lg-1
+            form.form-wrap(action='/manager/uploadimage' method='post', enctype='multipart/form-data')
+              input(type='hidden', name= 'data' ,value= { 
+                                                          "section" : "candle",
+                                                          "destination" : 'public/images/portfoliopage/candle', 
+                                                          "index" :  foodstyling_gallery.length,                                                     
+                                                          "page" : "portfoliopage" } )
+              input(type='file', name='imageupload')
+              input(type='submit')
+
+
+
+
+
+                
+              
