@@ -47,7 +47,7 @@ app.use(function(err, req, res, next) {
   res.render('error')
 })
 
-// db port setup
+// db port setup(!!)
 // mongoose.connect('mongodb://localhost:27017/breeze')
 
 mongoose.connect('mongodb://'+process.env.DB_USER+':'+process.env.DB_PWD+'@'+process.env.DB_HOST+'/breeze?authSource=admin', {
