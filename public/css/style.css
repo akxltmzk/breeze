@@ -1,3 +1,86 @@
-p{
-  font-size: 30px;
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,400,400i&display=swap');
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
 }
+
+/* reset defaults */
+h1,h2,h3,h4,h5,h6{margin: 0px;}
+ul{margin: 0px;}
+p{margin: 0px;}
+
+/* helpers */
+.show{display: block;}
+.hidden{display: none !important;}
+.pull-left{float: left;}
+.pull-right{float: right;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.text-center{text-align: center;}
+.block{display: block;}
+.inline-block{display: inline-block;}
+.clearfix:before,
+.clearfix:after {content: "";display: table;}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1; /* ie 6/7 */}
+
+.mb10{margin-bottom: 10px;}
+.mb15{margin-bottom: 15px;}
+.mb20{margin-bottom: 20px;}
+.mb30{margin-bottom: 30px;}
+.mb40{margin-bottom: 40px;}
+.mb50{margin-bottom: 50px;}
+.mb90{margin-bottom: 90px;}
+/* helpers end */
+
+/* layout */
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+}
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: yellow;
+}
+nav ul{
+  list-style: none;
+  padding-top: 41px;
+
+}
+
+nav li{
+  display: inline-block;
+  padding: 0px 64.3px;  
+}
+
+nav li:last-child{
+  padding-right: 264.9px;
+}
+
+nav li a{
+  font-family: 'Roboto';
+  color: #000000;
+  font-size: 13.6px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 4.08px;
+  text-decoration: none;
+
+  transition: all 0.3s ease 0s;
+}
+
+nav li a:hover{
+  color: aquamarine;
+}
+
+/* about page */

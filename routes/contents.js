@@ -5,8 +5,8 @@ const _ = require('lodash')
 
 // ------------------------ intropage route ----------------------------//
 
-router.get('/', function(req, res) {
-  res.render('intro')
+router.get('/', (req, res)=> {
+  res.render('about')
 })
 
 module.exports = router;
