@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,400,400i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Volkhov:400,400i,700,700i&display=swap');
 
 body{
   box-sizing: border-box;
@@ -10,6 +11,7 @@ body{
 h1,h2,h3,h4,h5,h6{margin: 0px;}
 ul{margin: 0px;}
 p{margin: 0px;}
+a{text-decoration: none; color: inherit;}
 
 /* helpers */
 .show{display: block;}
@@ -49,21 +51,20 @@ nav{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: yellow;
+
 }
 nav ul{
   list-style: none;
-  padding-top: 41px;
-
+  padding-top: 2.5rem;
 }
 
 nav li{
   display: inline-block;
-  padding: 0px 64.3px;  
+  padding: 0px 4rem;  
 }
 
 nav li:last-child{
-  padding-right: 264.9px;
+  padding-right: 16.5rem;
 }
 
 nav li a{
@@ -84,3 +85,106 @@ nav li a:hover{
 }
 
 /* about page */
+
+.content.aboutpage .section-info{
+
+  /* background: blue; */
+
+  margin: 0;
+  padding: 0;
+  width: 560px;
+  height: 100vh;
+  float: left;
+}
+
+.content.aboutpage .logo{
+  width: 400px;
+  height: 400px;
+  line-height: 400px;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 160px;
+
+  border: #e6e6e6 solid 0.5px;
+  border-radius: 100%;
+}
+
+.content.aboutpage h1{
+  vertical-align: middle;
+
+  font-family: 'Volkhov';
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 3.58px;
+  color: #000000;
+}
+
+.content.aboutpage .contact-section{
+  /* background: yellow; */
+  
+  float: right;
+  width: 400px;
+}
+
+.content.aboutpage .contact-section .contact-wrap{
+  padding: 23.5px;
+}
+
+.content.aboutpage .contact-section .contact-wrap h3{
+  font-family: 'Volkhov';
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #000000;
+
+  margin-bottom: 39.9px;
+}
+
+.content.aboutpage .contact-section .contact-wrap .form-input{
+  border: #e6e6e6 solid 0.5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 1.79px;
+  text-align: left;
+  color: #808080;
+}
+
+
+.content.aboutpage .contact-section .contact-wrap .author{
+  border-bottom: #e6e6e6 solid 0.5px;
+} 
+
+.content.aboutpage .contact-section .contact-wrap .form-input:last-child{
+  border-bottom: none;
+} 
+
+
+
+.content.aboutpage .contact-section .contact-wrap textarea,
+.content.aboutpage .contact-section .contact-wrap input {
+  border: none;
+}
+
+.content.aboutpage .contact-section .contact-wrap a{
+  border: none;
+  
+}
+
+
+
+
+
+
+
+
