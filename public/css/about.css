@@ -1,0 +1,139 @@
+.aboutpage .section-info{
+
+  /* background: blue; */
+
+  margin: 0;
+  padding: 0;
+  width: 560px;
+  height: 100vh;
+  float: left;
+}
+
+.aboutpage .logo{
+  width: 400px;
+  height: 400px;
+  line-height: 400px;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 160px;
+
+  border: #e6e6e6 solid 1px;
+  border-radius: 100%;
+}
+
+.aboutpage h1{
+  vertical-align: middle;
+
+  font-family: 'Volkhov';
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 3.58px;
+  color: #000000;
+}
+
+.aboutpage .contact-section{
+  /* background: yellow; */
+  
+  float: right;
+  width: 400px;
+}
+
+.aboutpage .contact-section .contact-wrap{
+  padding: 23.5px;
+}
+
+.aboutpage .contact-section .contact-wrap h3{
+  font-family: 'Volkhov';
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #000000;
+
+  margin-bottom: 39.9px;
+}
+
+.aboutpage .contact-section .contact-wrap .form-input{
+  border-bottom: #e6e6e6 solid 1px;
+  padding-bottom: 3px;
+
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 1.79px;
+  text-align: left;
+  color: #808080;
+}
+
+.aboutpage .contact-section .contact-wrap .form-input:last-child{
+  border-bottom: none;
+} 
+
+.aboutpage .contact-section .contact-wrap textarea,
+.aboutpage .contact-section .contact-wrap input,
+.aboutpage .contact-section .contact-wrap a {
+  border: none;
+}
+
+/*contents */
+.aboutpage .contents{
+  float: left;
+  margin-top: 500px;
+}
+
+.aboutpage .contents .aboutimage-1{
+  width: 800px;
+  height: 544px;
+  background-image: url(../images/about/about-1.jpg);
+  background-repeat:no-repeat;
+  background-position: center center;
+  margin-bottom: 25px;
+}
+
+.aboutpage .contents .aboutimage-1 .info-1{
+  width: 345.3px;
+  height: 135px;
+  position: absolute;
+  right: 320px;
+  top: 700px;
+}
+.aboutpage .contents .aboutimage-1 .info-1 h3{
+  font-family: Volkhov;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.aboutpage .contents .aboutimage-1 .info-1 p{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.aboutpage .contents .aboutimage-2{
+  width: 800px;
+  height: 544px;
+  background-image: url(../images/about/about-3.jpg);
+  background-repeat:no-repeat;
+  background-position: center center;
+  margin-bottom: 25px;
+}
+
+
+
+
+
+
+
