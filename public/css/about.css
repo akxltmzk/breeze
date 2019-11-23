@@ -1,10 +1,8 @@
 .aboutpage .section-info{
-
-  /* background: blue; */
-
+  background: mediumspringgreen; 
   margin: 0;
   padding: 0;
-  width: 560px;
+  width: 29.16%;
   height: 100vh;
   float: left;
 }
@@ -16,7 +14,7 @@
   text-align: center;
   margin-top: 100px;
   margin-left: 160px;
-
+  float: right;
   border: #e6e6e6 solid 1px;
   border-radius: 100%;
 }
@@ -80,29 +78,38 @@
   border: none;
 }
 
-/*contents */
+/* contents */
+
 .aboutpage .contents{
+  background: mediumturquoise;
   float: left;
   margin-top: 500px;
+  width: 62.5%;
+  height: 100%; 
 }
 
-.aboutpage .contents .aboutimage-1{
-  width: 800px;
+.aboutpage .contents .contents-padding{
+  padding: 20px;
+}
+
+.aboutpage .contents .contents-padding .aboutimage-1{
+  width: 66.66%;
   height: 544px;
   background-image: url(../images/about/about-1.jpg);
   background-repeat:no-repeat;
-  background-position: center center;
+  background-position: center left;
   margin-bottom: 25px;
 }
 
-.aboutpage .contents .aboutimage-1 .info-1{
+.aboutpage .contents .contents-padding .info-1{
   width: 345.3px;
   height: 135px;
   position: absolute;
-  right: 320px;
+  right: 22%;
   top: 700px;
 }
-.aboutpage .contents .aboutimage-1 .info-1 h3{
+.aboutpage .contents .contents-padding .info-1 h3,
+.aboutpage .contents .contents-padding .info-2 h3{
   font-family: Volkhov;
   font-size: 32px;
   font-weight: normal;
@@ -112,7 +119,8 @@
   color: #000000;
 }
 
-.aboutpage .contents .aboutimage-1 .info-1 p{
+.aboutpage .contents .contents-padding .info-1 p,
+.aboutpage .contents .contents-padding .info-2 p{
   font-family: Roboto;
   font-size: 14px;
   font-weight: 300;
@@ -122,13 +130,41 @@
   color: #000000;
 }
 
-.aboutpage .contents .aboutimage-2{
-  width: 800px;
-  height: 544px;
-  background-image: url(../images/about/about-3.jpg);
-  background-repeat:no-repeat;
-  background-position: center center;
-  margin-bottom: 25px;
+.aboutpage .contents .contents-padding .aboutimage-2{ 
+  width: 100%;
+  height: 529px;
+  overflow: hidden;
+  margin-bottom: 200px;
+}
+
+.aboutpage .contents .contents-padding .aboutimage-2 img{ 
+  float: right;
+  width: 782px;
+}
+
+.aboutpage .contents .contents-padding .info-2{
+  float: left;
+  width: 345.3px;
+  position : relative;
+  top: 200px;
+}
+.aboutpage .contents .contents-padding .video-container{
+  width: 100%;
+  height: 100vh;
+}
+
+.aboutpage .contents .contents-padding .video-container .video{
+  float: left;
+  position: relative;
+  width: 50%; 
+  height: 35%;
+  margin-bottom: 20px;
+}
+
+.aboutpage .contents .contents-padding .video-container .video iframe{
+
+  width: 98%; 
+  height: 100%;
 }
 
 
