@@ -9,4 +9,12 @@ router.get('/', (req, res)=> {
   res.render('about')
 })
 
+router.get('/about', (req, res)=> {
+  res.render('about')
+})
+
+router.get('/works', (req, res)=> {
+  res.render('works')
+})
+
 module.exports = router;
