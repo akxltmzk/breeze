@@ -1,29 +1,121 @@
-.aboutpage .section-info{
-
-  margin: 0;
-  padding: 0;
-  width: 29.16%;
-  height: 100vh;
-  float: left;
+.page-margin{
+	margin-right: 7%;
+	margin-left: 7%;
 }
 
-.aboutpage .logo{
-  width: 400px;
-  height: 400px;
-  line-height: 400px;
-  text-align: center;
-  margin-top: 100px;
-  margin-left: 160px;
-  float: right;
-  border: #e6e6e6 solid 1px;
+/* page gird layout */
+
+.page-margin .page-grid {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(30, 5.35vw);
+	grid-gap: 0px;
+}
+
+.page-grid .griditem {
+	width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-grid .navbarcontainer{
+	grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.page-grid .logo{
+	grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 6;
+}
+
+.page-grid .contact{
+	grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 6;
+	grid-row-end: 12;
+
+	position: sticky;
+	top: 0;
+	height: 100vh;
+}
+
+.page-grid .inform-1{
+	grid-column-start: 3;
+  grid-column-end: 9;
+  grid-row-start: 6;
+	grid-row-end: 12;
+	
+	position: relative;
+}
+
+.page-grid .inform-2{
+	grid-column-start: 3;
+  grid-column-end: 9;
+  grid-row-start: 12;
+	grid-row-end: 18;
+	
+	position: relative;
+}
+
+.page-grid .videocontainer{
+	grid-column-start: 3;
+  grid-column-end: 9;
+  grid-row-start: 18;
+	grid-row-end: 28;
+	
+	position: relative;
+}
+
+/* navbar */
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.navbar *{
+	vertical-align: middle;
+
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 4.08px;
+  color: #000000;
+}
+
+/* logo */
+
+.logo{
+	width: 100%;
+	height: 100%;
+	line-height: 100%;
+	text-align: center;
+	border: #e6e6e6 solid 1px;
   border-radius: 100%;
 }
 
-.aboutpage h1{
-  vertical-align: middle;
+.logo .logo-wrap{
+	height: 100%;
+	position: relative;
+}
+
+.logo .logo-wrap h1{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%); 
 
   font-family: 'Volkhov';
-  font-size: 28px;
+  font-size: 26px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -31,54 +123,53 @@
   color: #000000;
 }
 
-
-.aboutpage  .copyright { 
-  width: 400px;
-  float: right;
-  
+/* contact */
+.contact .contact-wrap{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
 }
 
-.aboutpage .copyright p{ 
-  padding: 23.5px;
-  margin-top: 165px;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 100;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  color: #000000;
+.contact .contact-wrap .title,
+.contact .contact-wrap .author{
+	margin-bottom: 5px;
+	border-bottom: #e6e6e6 solid 1px;
 }
 
-.aboutpage .contact-section{
-  /* background: yellow; */
-  
-  float: right;
-  width: 400px;
+.contact .contact-wrap input{
+	border: none !important;
+	width: 70%;
 }
 
-.aboutpage .contact-section .contact-wrap{
-  padding: 23.5px;
+.contact .contact-wrap textarea{
+	border: none !important;
+	width: 100%;
 }
 
-.aboutpage .contact-section .contact-wrap h3{
-  font-family: 'Volkhov';
-  font-size: 24px;
+.contact .contact-wrap .submit{
+	margin-top: 3%;
+}
+
+.contact .contact-wrap .copyright{
+	margin-top: 55%;
+}
+
+.contact .contact-wrap h3{
+	margin-bottom: 23px;
+
+	font-family: 'Volkhov';
+  font-size: 17px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
   color: #000000;
-
-  margin-bottom: 39.9px;
 }
 
-.aboutpage .contact-section .contact-wrap .form-input{
-  border-bottom: #e6e6e6 solid 1px;
-  padding-bottom: 3px;
-
-  font-family: Roboto;
-  font-size: 14px;
+.contact .contact-wrap .form-input,
+.contact .contact-wrap .copyright{
+	font-family: Roboto;
+  font-size: 8px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -87,50 +178,39 @@
   color: #808080;
 }
 
-.aboutpage .contact-section .contact-wrap .form-input:last-child{
-  border-bottom: none;
-} 
+/* infom - 1 */
 
-.aboutpage .contact-section .contact-wrap textarea,
-.aboutpage .contact-section .contact-wrap input,
-.aboutpage .contact-section .contact-wrap a {
-  border: none;
+.inform-1 .image img{
+	width: 66.7%;
+  height: auto;
 }
 
-/* contents */
-
-.aboutpage .contents{
-  /* background: mediumturquoise; */
-  float: left;
-  margin-top: 500px;
-  width: 58.5%;
-  height: 100%; 
+.inform-1 .info-1{
+	position: absolute;
+	top: 40%;
+	width: 25%;
+	right: 15%;
 }
 
-.aboutpage .contents .contents-padding{
-  padding: 20px;
+/* inform-2 */
+
+.inform-2 .image img{
+	position: absolute;
+	right: 0;
+	top: -5%;
+	width: 66.7%;
+  height: auto;
 }
 
-.aboutpage .contents .contents-padding .aboutimage-1{
-  width: 66.66%;
-  height: 544px;
-  background-image: url(../images/about/about-1.jpg);
-  background-repeat:no-repeat;
-  background-position: center left;
-  margin-bottom: 25px;
+.inform-2 .info-2{
+	position: absolute;
+	top: 30%;
+	width: 25%;
+	left: 0;
 }
-
-.aboutpage .contents .contents-padding .info-1{
-  width: 345.3px;
-  height: 135px;
-  position: absolute;
-  right: 23.5%;
-  top: 700px;
-}
-.aboutpage .contents .contents-padding .info-1 h3,
-.aboutpage .contents .contents-padding .info-2 h3{
-  font-family: Volkhov;
-  font-size: 32px;
+.inform-1 .info-1 h3,.inform-2 .info-2 h3{
+	font-family: Volkhov;
+  font-size: 23px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -138,10 +218,9 @@
   color: #000000;
 }
 
-.aboutpage .contents .contents-padding .info-1 p,
-.aboutpage .contents .contents-padding .info-2 p{
+.inform-1 .info-1 p,.inform-2 .info-2 p{
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -149,48 +228,17 @@
   color: #000000;
 }
 
-.aboutpage .contents .contents-padding .aboutimage-2{ 
-  width: 100%;
-  height: 529px;
-  overflow: hidden;
-  margin-bottom: 200px;
+/* videocontainer */
+
+.videocontainer .video{
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 2%;
+
 }
 
-.aboutpage .contents .contents-padding .aboutimage-2 img{ 
-  float: right;
-  width: 782px;
+.videocontainer .video iframe{
+	width: 95%;
+	height: 290px;
 }
-
-.aboutpage .contents .contents-padding .info-2{
-  float: left;
-  width: 345.3px;
-  position : relative;
-  top: 200px;
-}
-.aboutpage .contents .contents-padding .video-container{
-  width: 100%;
-  height: 100vh;
-}
-
-.aboutpage .contents .contents-padding .video-container{
-  width: 100%;
-  height: 100vh;
-}
-
-.aboutpage .contents .contents-padding .video-container .video{
-  position: relative;
-  width: 49%; 
-  height: 29%;
-  margin-bottom: 20px;
-}
-.aboutpage .contents .contents-padding .video-container .video iframe{
-  width: 100%; 
-  height: 100%;
-}
-
-
-
-
-
-
-

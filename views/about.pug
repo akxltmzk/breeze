@@ -2,25 +2,32 @@ extends layout
 
 block content
   .aboutpage
-    .section-info
-      .logo 
-        h1 breeze
-      .contact-section
-        .contact-wrap
-          h3 CONTACT   
-          .form-input.title TITLE 
-            input.title(type='text') 
-          .form-input.author AUTHOR 
-            input.author(type='text')
-          .form-input.author CONTENT 
-            textarea(rows="8" cols="45")
-          .form-input
-            a(href='#') SUBMIT
-      .copyright
-          p Copyright©2020 BREEZE All right reserve
-    .contents
-      .contents-padding
-        .aboutimage-1
+    .page-margin
+      .page-grid
+        .griditem.navbarcontainer
+          .navbar
+            a(href='#').breeze BREEZE 
+            a(href='#').works WORKS
+            a(href='#').seasons SEASONS
+        .griditem.logo
+          .logo-wrap
+            h1 breeze
+        .griditem.contact
+          .contact-wrap
+            h3 CONTACT   
+            .form-input.title TITLE 
+              input.title(type='text') 
+            .form-input.author AUTHOR 
+              input.author(type='text')
+            .form-input.author CONTENT 
+              textarea(rows="9" cols="100")
+            .form-input.submit
+              a(href='#') SUBMIT
+            .copyright
+              p Copyright©2020 BREEZE All right reserve
+        .griditem.inform-1
+          .image
+            img(src='../images/about/about-1.jpg')
           .info-1
             h3 FOOD STYLIST
             p Contrary to popular belief, Lorem Ipsum is not 
@@ -28,8 +35,9 @@ block content
               | classical Latin literature from 45 BC, making it 
               | over 2000 years old. Richard McClintock, 
               | a Latin professor at Hampden-Sydney College 
-        .aboutimage-2
-          img(src='../images/about/about-3.jpg')
+        .griditem.inform-2
+          .image
+            img(src='../images/about/about-2.jpg')
           .info-2
             h3 FOOD STYLIST
             p Contrary to popular belief, Lorem Ipsum is not 
@@ -37,14 +45,14 @@ block content
               | classical Latin literature from 45 BC, making it 
               | over 2000 years old. Richard McClintock, 
               | a Latin professor at Hampden-Sydney College 
-        .video-container
-          .video.left
+        .griditem.videocontainer
+          .video
             iframe(allowfullscreen="allowfullscreen" frameBorder="0" src="https://www.youtube.com/embed/faYXLkLy9go")
-          .video.right
+          .video
             iframe(allowfullscreen="allowfullscreen" frameBorder="0" src="https://www.youtube.com/embed/xwvjezWrVKA")
-          .video.left
-            iframe( allowfullscreen="allowfullscreen" frameBorder="0" src="https://www.youtube.com/embed/TeHTlibljVE")
-          .video.right
-            iframe( allowfullscreen="allowfullscreen" frameBorder="0" src="https://www.youtube.com/embed/iXxQujmYLus")
-            
+          .video
+            iframe(allowfullscreen="allowfullscreen" frameBorder="0" src="https://www.youtube.com/embed/TeHTlibljVE")
+          .video
+            iframe(allowfullscreen="allowfullscreen" frameBorder="0" src="https://www.youtube.com/embed/yO4-YdBhsPU")
+  
   link(rel='stylesheet', href='css/about.css')
