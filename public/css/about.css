@@ -1,47 +1,5 @@
-.page-margin{
-	margin-right: 7%;
-	margin-left: 7%;
-}
 
 /* page gird layout */
-
-.page-margin .page-grid {
-	display: grid;
-	grid-template-columns: repeat(8, 1fr);
-	grid-template-rows: repeat(30, 5.35vw);
-	grid-gap: 0px;
-}
-
-.page-grid .griditem {
-	width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.page-grid .navbarcontainer{
-	grid-column-start: 6;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.page-grid .logo{
-	grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 6;
-}
-
-.page-grid .contact{
-	grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 6;
-	grid-row-end: 12;
-
-	position: sticky;
-	top: 0;
-	height: 100vh;
-}
 
 .page-grid .inform-1{
 	grid-column-start: 3;
@@ -70,91 +28,39 @@
 	position: relative;
 }
 
-/* navbar */
-
-.navbar{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 100%;
-}
-
-.navbar *{
-	vertical-align: middle;
-
-  font-family: Roboto;
-  font-size: 11px;
-  font-weight: 100;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: 4.08px;
-  color: #000000;
-}
-
-/* logo */
-
-.logo{
-	width: 100%;
-	height: 100%;
-	line-height: 100%;
-	text-align: center;
-	border: #e6e6e6 solid 1px;
-  border-radius: 100%;
-}
-
-.logo .logo-wrap{
-	height: 100%;
-	position: relative;
-}
-
-.logo .logo-wrap h1{
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%); 
-
-  font-family: 'Volkhov';
-  font-size: 26px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: 3.58px;
-  color: #000000;
-}
-
 /* contact */
-.contact .contact-wrap{
+
+.leftpannel .contact-wrap{
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
 }
 
-.contact .contact-wrap .title,
-.contact .contact-wrap .author{
+.leftpannel .contact-wrap .title,
+.leftpannel .contact-wrap .author{
 	margin-bottom: 5px;
 	border-bottom: #e6e6e6 solid 1px;
 }
 
-.contact .contact-wrap input{
+.leftpannel .contact-wrap input{
 	border: none !important;
 	width: 70%;
 }
 
-.contact .contact-wrap textarea{
+.leftpannel .contact-wrap textarea{
 	border: none !important;
 	width: 100%;
 }
 
-.contact .contact-wrap .submit{
+.leftpannel .contact-wrap .submit{
 	margin-top: 3%;
 }
 
-.contact .contact-wrap .copyright{
+.leftpannel .contact-wrap .copyright{
 	margin-top: 55%;
 }
 
-.contact .contact-wrap h3{
+.leftpannel .contact-wrap h3{
 	margin-bottom: 23px;
 
 	font-family: 'Volkhov';
@@ -166,8 +72,8 @@
   color: #000000;
 }
 
-.contact .contact-wrap .form-input,
-.contact .contact-wrap .copyright{
+.leftpannel .contact-wrap .form-input,
+.leftpannel .contact-wrap .copyright{
 	font-family: Roboto;
   font-size: 8px;
   font-weight: normal;
@@ -210,7 +116,7 @@
 }
 .inform-1 .info-1 h3,.inform-2 .info-2 h3{
 	font-family: Volkhov;
-  font-size: 23px;
+  font-size: 21px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;

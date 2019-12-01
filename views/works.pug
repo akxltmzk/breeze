@@ -2,36 +2,47 @@ extends layout
 
 block content
   .workspage
-    .section-info
-      .logo 
-        h1 breeze
-      .annualworks
-        .items 
-          a(href='#') 2020
-        .items
-          a(href='#') 2019
-   
-
-          
-      .copyright
-        p Copyright©2020 BREEZE All right reserve
-    .contents 
-      .contents-padding
-        .gallery-grid 
-          .gallery-item.item-1
-          .gallery-item.item-2
-          .gallery-item.item-3
-          .gallery-item.item-4
-          .gallery-item.item-5
-          .gallery-item.item-6
-          .gallery-item.item-7
-          .gallery-item.item-8
-          .gallery-item.item-9
-          .gallery-item.item-10
-          .gallery-item.item-11
-          .gallery-item.item-12
-          
-      
-
-
+    .page-margin
+      .page-grid
+        .griditem.navbarcontainer
+          .navbar
+            a(href='/about').breeze BREEZE 
+            a(href='/works').works WORKS
+            a(href='#').seasons SEASONS
+        .griditem.logo
+          .logo-wrap
+            h1 breeze
+        .griditem.leftpannel
+          .contact-wrap  
+            .annual
+              p 2020
+              p 2019
+            .copyright
+              p Copyright©2020 BREEZE All right reserve
+        .griditem.gallery
+          .galleryitem-1
+            img(src='../images/works/works-1.jpg')
+          .galleryitem-2 
+            img(src='../images/works/works-2.jpg')
+          .galleryitem-3
+            img(src='../images/works/works-3.jpg')
+          .galleryitem-4  
+            img(src='../images/works/works-4.jpg')
+          .galleryitem-5
+            img(src='../images/works/works-5.jpg')
+          .galleryitem-6 
+            img(src='../images/works/works-6.jpg')
+          .galleryitem-7
+            img(src='../images/works/works-7.jpg')
+          .galleryitem-8 
+            img(src='../images/works/works-8.jpg')
+          .galleryitem-9
+            img(src='../images/works/works-9.jpg')
+          .galleryitem-10  
+            img(src='../images/works/works-10.jpg')
+          .galleryitem-11
+            img(src='../images/works/works-11.jpg')
+          .galleryitem-12    
+            img(src='../images/works/works-12.jpg')         
   link(rel='stylesheet', href='css/works.css')
+  link(rel='stylesheet', href='css/layout.css')
