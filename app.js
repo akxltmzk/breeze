@@ -6,8 +6,6 @@ const path = require('path')
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 const bodyParser = require('body-parser')
-const mongoose = require('mongoose')
-
 
 // routes
 const contentsRouter = require('./routes/contents')
@@ -45,13 +43,6 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500)
   res.render('error')
-})
-
-// db port setup(!!)
-// mongoose.connect('mongodb://localhost:27017/breeze')
-
-mongoose.connect('mongodb://'+process.env.DB_USER+':'+process.env.DB_PWD+'@'+process.env.DB_HOST+'/breeze?authSource=admin', {
-  useNewUrlParser: true
 })
 
 module.exports = app
